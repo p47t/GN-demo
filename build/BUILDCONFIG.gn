@@ -1,0 +1,3 @@
+set_default_toolchain("//build/toolchains:gcc")
+
+cflags_cc = [ "-std=c++11" ]

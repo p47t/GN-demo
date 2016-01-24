@@ -1,0 +1,5 @@
+executable("hello") {
+  sources = [
+    "main.cpp",
+  ]
+}

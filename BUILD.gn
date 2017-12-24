@@ -2,4 +2,7 @@ executable("hello") {
   sources = [
     "main.cpp",
   ]
+  deps = [
+    "//demo:demo"
+  ]
 }

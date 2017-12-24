@@ -3,9 +3,9 @@
 #include <vector>
 #include <memory>
 
-#include "demo/public.h"
+#include "private.h"
 
-int main()
+void demo()
 {
-    demo();
+    who_made_coffee();
 }

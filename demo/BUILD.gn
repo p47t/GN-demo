@@ -1,0 +1,11 @@
+source_set("demo") {
+  sources = [
+    "public.cpp",
+    "public.h",
+    "private.cpp",
+    "private.h",
+  ]
+  public = [
+    "public.h",
+  ]
+}

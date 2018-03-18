@@ -7,5 +7,5 @@ install:
     - wget https://github.com/zengcan/gn-bin/raw/master/linux64/gn
     - chmod u+x gn
 script:
-    - ./gn gen out
-    - ninja -C out
+    - ./gn gen -v out
+    - ninja -v -C out

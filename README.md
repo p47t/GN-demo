@@ -4,3 +4,7 @@
 
     $ gn gen out
     $ ninja -C out
+
+## See it in action
+
+[![asciicast](https://asciinema.org/a/0VdrIZDVNi9Le4PKQWjthQEP9.png)](https://asciinema.org/a/0VdrIZDVNi9Le4PKQWjthQEP9)

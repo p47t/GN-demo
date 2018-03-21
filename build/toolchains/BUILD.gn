@@ -48,7 +48,7 @@ toolchain("gcc") {
   tool("link") {
     outfile = "{{target_output_name}}{{output_extension}}"
     rspfile = "$outfile.rsp"
-    command = "g++ {{ldflags}} -o $outfile -Wl,--start-group @$rspfile {{solibs}} -Wl,--end-group {{libs}}"
+    command = "g++ {{ldflags}} -o $outfile @$rspfile {{solibs}} {{libs}}"
     description = "LINK $outfile"
     rspfile_content = "{{inputs}}"
     outputs = [

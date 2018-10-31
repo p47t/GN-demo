@@ -10,8 +10,8 @@ install:
     - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
 
     - sudo apt-get install ninja-build
-    - wget -O gn https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/latest
-    - chmod u+x gn
+    - wget -O gn.zip https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/latest
+    - unzip gn.zip
 
 script:
     - ./gn gen -v out

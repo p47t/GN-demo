@@ -2,14 +2,18 @@ language: cpp
 
 before_install:
     - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-    - sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
     - sudo apt-get update
 
 install:
+    # Install gcc5
     - sudo apt-get install -qq g++-5
     - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
 
-    - sudo apt-get install ninja-build
+    # Install Ninja v1.8.2
+    - wget -O ninja.zip https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip
+    - unzip ninja.zip
+
+    # Install latest GN
     - wget -O gn.zip https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/latest
     - unzip gn.zip
 

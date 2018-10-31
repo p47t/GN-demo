@@ -1,11 +1,18 @@
 language: cpp
+
 before_install:
-  - sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
-  - sudo apt-get update
+    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+    - sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
+    - sudo apt-get update
+
 install:
+    - sudo apt-get install -qq g++-5
+    - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
+
     - sudo apt-get install ninja-build
-    - wget https://github.com/zengcan/gn-bin/raw/master/linux64/gn
+    - wget -O gn https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+/latest
     - chmod u+x gn
+
 script:
     - ./gn gen -v out
     - ninja -v -C out

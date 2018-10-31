@@ -1,11 +1,9 @@
-#include <iostream>
-#include <string>
-#include <vector>
 #include <memory>
 
-#include "demo/public.h"
+#include "lib2/public.h"
 
 int main()
 {
-    demo();
+    auto p = std::make_unique<Public>();
+    return 0;
 }

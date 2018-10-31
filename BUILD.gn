@@ -1,8 +1,11 @@
-executable("hello") {
+executable("main") {
   sources = [
     "main.cpp",
   ]
+
+  cflags_cc += [ "-std=c++14" ]
+
   deps = [
-    "//demo:demo"
+    "//lib2:lib2",
   ]
 }

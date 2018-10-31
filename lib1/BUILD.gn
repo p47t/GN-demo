@@ -1,10 +1,11 @@
-source_set("demo") {
+source_set("lib1") {
   sources = [
-    "public.cpp",
-    "public.h",
     "private.cpp",
     "private.h",
+    "public.cpp",
+    "public.h",
   ]
+
   public = [
     "public.h",
   ]

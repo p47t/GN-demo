@@ -1,0 +1,22 @@
+config("lib2_config") {
+  include_dirs = [ "//" ]
+}
+
+source_set("lib2") {
+  sources = [
+    "private.cpp",
+    "private.h",
+    "public.cpp",
+    "public.h",
+  ]
+
+  configs = [ ":lib2_config" ]
+
+  public = [
+    "public.h",
+  ]
+
+  deps = [
+    "//lib1:lib1",
+  ]
+}

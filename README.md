@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/p47t/GN-demo.svg?branch=master)](https://travis-ci.org/p47r1ck7541/GN-demo)
+[![Build Status](https://travis-ci.org/p47t/GN-demo.svg?branch=master)](https://travis-ci.org/p47t/GN-demo)
 
 ## What is GN?
 

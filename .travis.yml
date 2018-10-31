@@ -19,4 +19,4 @@ install:
 
 script:
     - ./gn gen -v out
-    - ninja -v -C out
+    - ./ninja -v -C out

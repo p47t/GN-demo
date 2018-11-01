@@ -1,11 +1,3 @@
-executable("main") {
-  sources = [
-    "main.cpp",
-  ]
-
-  cflags_cc += [ "-std=c++14" ]
-
-  deps = [
-    "//lib2:lib2",
-  ]
+group("executable") {
+    deps = [ "//main" ]
 }

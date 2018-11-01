@@ -1,0 +1,9 @@
+executable("main") {
+  sources = [
+    "main.cpp",
+  ]
+
+  deps = [
+    "//lib2",
+  ]
+}

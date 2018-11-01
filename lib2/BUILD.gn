@@ -1,7 +1,3 @@
-config("lib2_config") {
-  include_dirs = [ "//" ]
-}
-
 source_set("lib2") {
   sources = [
     "private.cpp",
@@ -10,13 +6,11 @@ source_set("lib2") {
     "public.h",
   ]
 
-  configs = [ ":lib2_config" ]
-
   public = [
     "public.h",
   ]
 
   deps = [
-    "//lib1:lib1",
+    "//lib1",
   ]
 }
